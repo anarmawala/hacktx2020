@@ -1,13 +1,48 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+
+}
+body {
+  /* background: -moz-linear-gradient(top, #E16B03 0%, #f6b26b 100%);
+  background: -webkit-linear-gradient(top, #E16B03 0%, #f6b26b 100%);
+  background: linear-gradient(to bottom, #E16B03 0%, #f6b26b 100%); */
+}
+
+.radius-15 {
+    border-radius: 15pt;
+}
+
+.button-Click{
+  transition: 0.5s;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.hero {
+  background: url('https://www.realtracs.com/wp-content/uploads/2020/01/Hero_Right_3.png')  top center;
+  background-size: contain;
+}
+
+#tsparticles {
+  background: url('https://www.realtracs.com/wp-content/uploads/2020/01/Hero_Right_3.png')  top center;
+  background-size: contain;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.cardStyle{
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  border-radius: 15pt;
+
+  -webkit-box-shadow: 5px 3px 19px 0px rgba(0,0,0,0.42); 
+  box-shadow: 5px 3px 19px 0px rgba(0,0,0,0.42);
 }
