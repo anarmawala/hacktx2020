@@ -22,10 +22,7 @@ const properties = createSlice({
 
 export default properties
 
-const client = Axios.create({
-    timeout: 1500000,
-    headers: { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST,OPTIONS' },
-})
+const client = Axios.create()
 
 export const get_rating = (city: string, zipcode: string, current_payment: number, beds: number, baths: number, radius: number): AppThunk => async (
     dispatch: AppDispatch
@@ -41,8 +38,8 @@ export const get_rating = (city: string, zipcode: string, current_payment: numbe
             radius,
         })
 
-        console.dir('Hello', res.request.response)
-        // if (res.request) dispatch(properties.actions.setResponse(res.data))
+        console.log(JSON.parse(JSON.stringify(res.data)))
+        dispatch(properties.actions.setResponse(res.data))
     } catch (e) {
         console.error(e.message)
     } finally {
